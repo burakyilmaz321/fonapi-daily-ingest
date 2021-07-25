@@ -15,6 +15,9 @@ functions:
     events:
       # Ingest prices at 15:00 UTC, Mon-Fri
       - schedule: cron(0 15 ? * MON-FRI *)
+    environment:
+      SUPABASE_KEY: ${param:SUPABASE_KEY}
+      SUPABASE_URL: ${param:SUPABASE_URL}
 
 plugins:
   - serverless-python-requirements
