@@ -15,3 +15,6 @@ functions:
     events:
       # Ingest prices at 15:00 UTC, Mon-Fri
       - schedule: cron(0 15 ? * MON-FRI *)
+
+plugins:
+  - serverless-python-requirements
