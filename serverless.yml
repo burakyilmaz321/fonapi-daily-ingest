@@ -1,0 +1,17 @@
+org: burakyilmaz321
+app: fonapi-daily-ingest
+service: fonapi-daily-ingest
+
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  runtime: python3.8
+  lambdaHashingVersion: 20201221
+
+functions:
+  cronHandler:
+    handler: handler.run
+    events:
+      # Ingest prices at 15:00 UTC, Mon-Fri
+      - schedule: cron(0 15 ? * MON-FRI *)
