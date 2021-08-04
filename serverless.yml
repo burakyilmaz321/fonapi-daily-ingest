@@ -21,3 +21,8 @@ functions:
 
 plugins:
   - serverless-python-requirements
+
+custom:
+  pythonRequirements:
+    noDeploy:
+    - dataclasses
