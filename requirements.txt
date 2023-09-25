@@ -1,2 +1,2 @@
-tefas-crawler==0.3.3
+tefas-crawler==0.3.4
 supabase-py==0.0.3
